@@ -56,8 +56,8 @@ int main(void)
 		for(int j = 0; j < count_e; j++){
 
 			array_distances[array_graphs[j].end-1] = min(
-					(int)(array_distances[array_graphs[j].end-1]),
-					(int)(array_distances[array_graphs[j].start-1] + array_graphs[j].weight));
+					array_distances[array_graphs[j].end-1],
+					array_distances[array_graphs[j].start-1] + array_graphs[j].weight);
 
 		}
 	}
